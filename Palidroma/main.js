@@ -1,5 +1,6 @@
 let user_input = String(prompt('Inserisci una parola'));
 user_input = user_input.toLowerCase();
+user_input = user_input.replace(/\s+/g, '');
 let usr = reverse(user_input)
 const control = controlP(user_input);
 
