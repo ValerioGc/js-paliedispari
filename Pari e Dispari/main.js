@@ -1,8 +1,9 @@
 let user_input = prompt('Scrivi Pari o Dispari');
 user_input = user_input.toLowerCase();
+console.log(typeof(user_input));
 console.log("L'utente ha scelto" + " " + user_input);
 
-while (!isNaN(user_input) /* user_input != 'pari' || user_input != 'dispari'*/) {
+while ((!isNaN(user_input)) /* || (user_input !== 'pari') || (user_input !== 'dispari')*/) {
     // Controllo input stringautente
     alert('Scrivi pari o dispari');
     user_input = prompt('Scrivi Pari o Dispari');
